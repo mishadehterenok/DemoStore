@@ -8,11 +8,13 @@
           crossorigin="anonymous">
 </head>
 <body>
+<div class="container-fluid mt-5">
 <h1>Welcome!</h1>
 <br/>
 <div class="btn-group">
     <a href="${pageContext.request.contextPath}/registration" class="btn btn-outline-primary">Registration</a>
     <a href="${pageContext.request.contextPath}/sign" class="btn btn-outline-primary">Sign in</a>
+</div>
 </div>
 </body>
 </html>

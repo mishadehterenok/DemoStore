@@ -1,4 +1,4 @@
-package com.example.demoregistration.control;
+package com.example.store.control;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/profile")
-public class ProfileServlet extends HttpServlet {
+@WebServlet(urlPatterns = "/store", name = "store")
+public class WelcomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        getServletContext().getRequestDispatcher("/res/profile.jsp").forward(req,resp);
+        getServletContext().getRequestDispatcher("/res/store/welcomeStore.jsp").forward(req,resp);
     }
 }
